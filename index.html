@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Canvas </title>
+       </head>
+    <body>
+        <h1>Ievas darbs</h1>
+
+<canvas id=kanvasins width=300 height=300 style="background-color: cadetblue">
+</canvas>
+
+<script>
+    var ctx = kanvasins.getContext ("2d");
+    
+    ctx.fillStyle= "Coral";
+    ctx.fillRect (30, 50, 80, 50);
+
+    ctx.beginPath();
+ctx.arc(120, 220, 20, 0, Math.PI * 2);
+ctx.fillStyle= "peru";
+ctx.stroke();
+    
+    ctx.lineWidth= 2;
+    ctx.strokeStyle= "IndianRed";
+    ctx.strokeRect (120, 220, 30, 60);
+
+    ctx.font= "40px Arial";
+    ctx.fillStyle = "orange";
+    ctx.fillText("Ieva", 40, 120);
+
+    ctx.fillStyle = "crimson";
+    ctx.fillText("Vīgnere", 40, 160);
+    ctx.strokeStyle= "yellow";
+ctx.strokeText("Vīgnere", 40, 160);
+
+ctx.fillStyle= "plum";
+ctx.beginPath();
+ctx.arc(70, 160, 30, 0, Math.PI * 2);
+ctx.stroke();
+
+
+
+
+
+</script>
+
+
+    </body>
+
+</html>
